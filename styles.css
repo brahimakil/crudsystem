@@ -1,0 +1,126 @@
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+    padding: 20px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+input, button {
+    padding: 10px;
+    margin-bottom: 10px; /* Add margin between input fields vertically */
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+}
+
+input#count {
+    width: 100%; /* Make the count input 100% wide */
+}
+
+input {
+    background-color: #444;
+    color: #fff;
+}
+
+button {
+    background-color: #b00;
+    color: #fff;
+    cursor: pointer;
+    width: 100%; /* Make buttons full width on small screens */
+}
+
+button:hover {
+    background-color: #d00;
+}
+
+.price-info {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+    justify-content: space-between;
+    margin-bottom: 20px; /* Add margin below the price-info section */
+}
+
+.price-info input {
+    flex: 1; /* Take up remaining space */
+    margin-right: 40px; /* Add spacing between inputs */
+}
+
+#productTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#productTable th, #productTable td {
+    padding: 10px;
+    border: 1px solid #444;
+    text-align: center;
+}
+
+#productTable th {
+    background-color: #555;
+}
+
+.update, .delete {
+    background-color: #b00;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: auto; /* Reset width for buttons to default */
+    margin-right: 10px; /* Add margin between update and delete buttons */
+}
+
+.update:hover, .delete:hover {
+    background-color: #d00;
+}
+
+/* Center align buttons */
+.create-button,
+.search-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; /* Add margin below the buttons */
+}
+
+/* Add space between search buttons */
+.search-buttons button {
+    margin-right: 10px; /* Adjust as needed */
+}
+
+@media (max-width: 768px) {
+    .price-info input {
+        width: 100%; /* Make inputs full width on smaller screens */
+        margin-right: 0; /* Remove margin between inputs */
+        margin-bottom: 10px; /* Add margin between inputs vertically */
+    }
+
+    .update, .delete {
+        width: 100%; /* Make update and delete buttons full width on smaller screens */
+        margin-right: 0; /* Remove margin between buttons */
+        margin-bottom: 10px; /* Add margin between buttons vertically */
+    }
+}
